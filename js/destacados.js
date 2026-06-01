@@ -1,8 +1,6 @@
-const tarjetas =
-document.querySelectorAll(".tarjeta");
+const tarjetas = document.querySelectorAll(".tarjeta");
 
-const contador =
-document.getElementById("contador");
+const contador = document.getElementById("contador");
 
 tarjetas.forEach(tarjeta => {
 
@@ -11,8 +9,7 @@ tarjetas.forEach(tarjeta => {
         tarjeta.classList.toggle("seleccionada");
 
         const cantidad =
-        document.querySelectorAll(".seleccionada")
-        .length;
+        document.querySelectorAll(".seleccionada").length;
 
         contador.textContent =
         "Seleccionadas: " + cantidad;

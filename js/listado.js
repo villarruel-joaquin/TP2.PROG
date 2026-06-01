@@ -1,34 +1,11 @@
 const productos = [
 
-    {
-        nombre: "Kiwi",
-        categoria: "fruta"
-    },
-
-    {
-        nombre: "Mandarina",
-        categoria: "fruta"
-    },
-
-    {
-        nombre: "Manzana",
-        categoria: "fruta"
-    },
-
-    {
-        nombre: "Pan",
-        categoria: "otro"
-    },
-
-    {
-        nombre: "Leche",
-        categoria: "otro"
-    },
-
-    {
-        nombre: "Queso",
-        categoria: "otro"
-    }
+    { nombre: "Manzana", categoria: "fruta" },
+    { nombre: "Banana", categoria: "fruta" },
+    { nombre: "Pera", categoria: "fruta" },
+    { nombre: "Pan", categoria: "otro" },
+    { nombre: "Leche", categoria: "otro" },
+    { nombre: "Queso", categoria: "otro" }
 
 ];
 
@@ -66,8 +43,8 @@ document
 .addEventListener("click", () => {
 
     const frutas =
-    productos.filter(producto =>
-        producto.categoria === "fruta"
+    productos.filter(
+        producto => producto.categoria === "fruta"
     );
 
     mostrar(frutas);

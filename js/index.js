@@ -3,7 +3,7 @@ const meriendas = [
     "Yogur",
     "Fruta",
     "Galletitas",
-    "Sandwich"
+    "Café"
 ];
 
 const contenedor = document.getElementById("meriendas");
@@ -22,10 +22,8 @@ document
 .getElementById("btnCantidad")
 .addEventListener("click", () => {
 
-    document
-    .getElementById("resultado")
+    document.getElementById("resultado")
     .textContent =
-    "Cantidad de meriendas: " +
-    meriendas.length;
+    "Hay " + meriendas.length + " meriendas";
 
 });

@@ -1,65 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <title>Menú de Meriendas</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
 
-<h1>Menú de Meriendas</h1>
+    <h1>Menú de Meriendas</h1>
 
-<nav>
-    <a href="destacados.html">Destacados</a>
-    <a href="listado.html">Listado</a>
-</nav>
+    <nav>
+        <a href="destacados.html">Destacados</a>
+        <a href="listado.html">Listado</a>
+    </nav>
 
-<div id="meriendas" class="contenedor"></div>
+    <div id="meriendas" class="contenedor"></div>
 
-<button id="btnCantidad">
-Mostrar cantidad
-</button>
+    <button id="btnCantidad">
+        Mostrar cantidad
+    </button>
 
-<p id="resultado"></p>
+    <p id="resultado"></p>
 
-<script>
-
-const meriendas = [
-"Tostadas",
-"Yogur",
-"Fruta",
-"Galletitas",
-"Café"
-];
-
-const contenedor =
-document.getElementById("meriendas");
-
-meriendas.forEach(merienda => {
-
-contenedor.innerHTML += `
-<div class="caja">
-${merienda}
-</div>
-`;
-
-});
-
-document
-.getElementById("btnCantidad")
-.addEventListener("click", () => {
-
-document
-.getElementById("resultado")
-.textContent =
-"Hay " +
-meriendas.length +
-" meriendas";
-
-});
-
-</script>
+    <script src="js/index.js"></script>
 
 </body>
+
 </html>
