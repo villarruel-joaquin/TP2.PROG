@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Menú de Meriendas</h1>
+
+<nav>
+    <a href="destacados.html">Destacados</a>
+    <a href="listado.html">Listado</a>
+</nav>
+
+<div id="meriendas" class="contenedor"></div>
+
+<button id="btnCantidad">
+Mostrar cantidad
+</button>
+
+<p id="resultado"></p>
+
+<script>
+
+const meriendas = [
+"Tostadas",
+"Yogur",
+"Fruta",
+"Galletitas",
+"Café"
+];
+
+const contenedor =
+document.getElementById("meriendas");
+
+meriendas.forEach(merienda => {
+
+contenedor.innerHTML += `
+<div class="caja">
+${merienda}
+</div>
+`;
+
+});
+
+document
+.getElementById("btnCantidad")
+.addEventListener("click", () => {
+
+document
+.getElementById("resultado")
+.textContent =
+"Hay " +
+meriendas.length +
+" meriendas";
+
+});
+
+</script>
+
+</body>
+</html>
