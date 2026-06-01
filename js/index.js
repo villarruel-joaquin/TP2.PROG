@@ -1,11 +1,10 @@
 const meriendas = [
-    "Tostadas",
-    "Yogur",
-    "Fruta",
-    "Galletitas",
-    "Café"
+    "Licuado de banana",
+    "Medialunas",
+    "Chocolatada",
+    "Budín",
+    "tostadas"
 ];
-
 const contenedor = document.getElementById("meriendas");
 
 meriendas.forEach(merienda => {
